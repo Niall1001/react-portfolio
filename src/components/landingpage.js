@@ -43,8 +43,8 @@ class Landing extends Component {
                 <hr />
 
                 <p style={styles.textFadeIn}>
-                  HTML/CSS | Bootstrap | JavaScript | React | React Native |
-                  NodeJS | Express | MongoDB
+                  With Experience in using HTML/CSS | Bootstrap | JavaScript |
+                  React | React Native | NodeJS | Express | MongoDB
                 </p>
 
                 <div className='social-links' style={styles.imageFadeIn}>
