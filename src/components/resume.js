@@ -26,6 +26,7 @@ import TechnicalSkills from './TechnicalSkills';
 import me from './assets/me.jpg';
 import uni_logo from './assets/uni-logo.jpg';
 import school_logo from './assets/school-logo.png';
+import Slide from 'react-reveal/Slide';
 
 import '../App.css';
 import { TableRowColumn } from 'material-ui';
@@ -333,17 +334,23 @@ class Resume extends Component {
                 on time.
               </p>
               <hr style={{ borderTop: '3px solid #000000' }} />
+              <h5>Date of Birth</h5>
+              <p>25th October 1998</p>
               <h5>Address</h5>
               <p>5, Balfour Ave, BT7 2EU, Northern Ireland, UK</p>
               <h5>Phone</h5>
               <p>(+44) 7455 003158</p>
               <h5>Email</h5>
               <p>niallwalters135@gmail.com</p>
-              <h5>Web</h5>
-
+              <h5>Github Weblink</h5>
               <a href='https://github.com/Niall1001'>
                 {' '}
                 <p>https://github.com/niall1001</p>
+              </a>
+              <h5>Other Website</h5>
+              <a href='https://github.com/Niall1001'>
+                {' '}
+                <p>Additional Website (Maybe Charity Application)</p>
               </a>
               <hr style={{ borderTop: '3px solid #000000' }} />
             </Cell>
@@ -383,45 +390,67 @@ class Resume extends Component {
                   </TableBody>
                 </Table>
               </TableContainer>
+              <hr style={{ borderTop: '3px solid #e22947' }} />
 
-              <h2>Experience</h2>
-              <Experience
-                startYear={2019}
-                endYear={2020}
-                jobName='Placement Software Engineer - Citi Bank'
-                jobDescription='I worked for Citibank as Placement Software Engineer. Working within a Software Development based team, I have gained valuable insight into the world of Work as a Software Engineer. Participating and being included in daily meetings and knowledge sharing sessions has greatly improved my understanding and sparked enthusiasm into my daily work.
+              <Slide left>
+                <h2>Experience</h2>
+                <Experience
+                  startYear={2019}
+                  endYear={2020}
+                  jobName='Placement Software Engineer - Citi Bank'
+                  jobDescription='I worked for Citibank as Placement Software Engineer. Working within a Software Development based team, I have gained valuable insight into the world of Work as a Software Engineer. Participating and being included in daily meetings and knowledge sharing sessions has greatly improved my understanding and sparked enthusiasm into my daily work.
                 Taking on the role of Scrum master, I planned and executed tasks to ensure sprint completion. I ensured tasks completed by my team where to a high standard and done on time. 
                 Deployed my changes of code from Development into Production. Afforded me the opportunity to see how Citi completed this and introduced me to processes that include the use of; uDeploy and TeamCity as deployment tools to complete these tasks.
                 Left a lasting impact with my team at Citi as I created and developed the mavenisation of one of the applications my team worked on throughout the year. Completed and worked on JIRA tasks daily has increased my coding knowledge and application.
                 Working with a team to present Java training to employees that are training for the Java certificate training.'
-              />
-              <hr style={{ borderTop: '3px solid #e22947' }} />
+                />
+              </Slide>
 
-              <h2>Technical Skills</h2>
-              <TechnicalSkills
-                skillsName='A-Level Software Systems Development Project'
-                skillsDescription='In A-level software,
+              <Slide left>
+                <Experience
+                  startYear={2017}
+                  endYear={2019}
+                  jobName='Pharmacy Assistant'
+                  jobDescription='Managed and co-ordinate with a team to ensure right medicine is given to customers. Involving preparation of prescription, stock management and customer service. The role has improved confidence, work ethic and eye for detail as preparing right prescription is crucial.'
+                />
+                <hr style={{ borderTop: '3px solid #e22947' }} />
+              </Slide>
+
+              <Slide left>
+                <h2>Technical Skills</h2>
+                <TechnicalSkills
+                  skillsName='A-Level Software Systems Development Project'
+                  skillsDescription='In A-level software,
                I began by breaking down the specified school (Provided by a case study) into different tables that held relevant information on;
                 Tutors, Students, Fees, Instruments, Events etc. as well as tables to hold information on students renting an instrument for example.
                  Creating a working database in SQL and then created a suitable front-end system that I could utilise and modify the database in accordance to SQL queries that I created.
                   Also, creating my front-end project using C# in a way that could be easily readable and act fully independent and be integrated seamlessly with each of my teammates projects;
                    to create a fully modular system.'
-              />
-              <TechnicalSkills
-                skillsName='Citi Bank Placement Year'
-                skillsDescription='Through completing a placement with Citi, I have greatly improved my knowledge of Java and SQL.
+                />
+              </Slide>
+              <Slide left>
+                <TechnicalSkills
+                  skillsName='Citi Bank Placement Year'
+                  skillsDescription='Through completing a placement with Citi, I have greatly improved my knowledge of Java and SQL.
                  I was assigned tasks throughout the year including; refactoring methods, creating test cases using Mockito and fixing logical issues within production applications.
                 Throughout this year I was introduced to maven style projects and I converted a project from a simple jar file structure to a maven style structure.
                 Improvement of interpersonal skills like; Speaking - Throughout placement I was encouraged to voice any problems I was struggling with to my team, so that they could help resolve any issues.
                 Listening - I demonstrated clear listening and understanding skills through taking online training courses on both Java and Mockito and through in house training on both SQL and Python training when I had to listen clearly to what was being said, assimilate and the to apply the knowledge as required. 
                 Presenting – In joining the Java Certificate Training Scheme I had to present knowledge via presentations to support others in gaining their Java Certificate qualifications.'
-              />
-
-              <h2>Language Proficency</h2>
-              <Skills skill='javascript' progress={100} />
-              <Skills skill='HTML/CSS' progress={80} />
-              <Skills skill='NodeJS' progress={50} />
-              <Skills skill='React' progress={75} />
+                />
+                <hr style={{ borderTop: '3px solid #e22947' }} />
+              </Slide>
+              <Slide left>
+                <h2>Language Proficency</h2>
+                <Skills skill='javascript' progress={100} />
+                <Skills skill='HTML/CSS' progress={80} />
+                <Skills skill='NodeJS' progress={50} />
+                <Skills skill='React' progress={75} />
+                <Skills skill='SQL' progress={75} />
+                <Skills skill='Java' progress={50} />
+                <Skills skill='Mockito' progress={75} />
+                <Skills skill='Express JS' progress={75} />
+              </Slide>
             </Cell>
           </Grid>
         </div>
